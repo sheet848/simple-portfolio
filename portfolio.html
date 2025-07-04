@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Instagram Style</title>
+    <link rel="stylesheet" href="../Portfolio/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-section">
+                <div class="profile-pic" onclick="changeProfilePic()">
+                    <span id="profileInitials">YN</span>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1.2K</div>
+                            <div class="stat-label">Followers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">890</div>
+                            <div class="stat-label">Following</div>
+                        </div>
+                    </div>
+                    <div class="username">Sheetal_Naik</div>
+                    <div class="bio">
+                        Front End Developer<br>
+                        I craft interfaces that look good, load fast, and work flawlessly.<br>
+                        📍 Bhubaneswar, India
+                    </div>
+                    <button class="contact-btn" onclick="contactMe()">Contact Me</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('about')">About</div>
+            <div class="tab" onclick="showTab('experience')">Experience</div>
+            <div class="tab" onclick="showTab('skills')">Skills</div>
+            <div class="tab" onclick="showTab('projects')">Projects</div>
+        </div>
+
+        <div class="content">
+            <div id="about" class="tab-content active">
+                <div class="about-text">
+                    <h2 style="margin-bottom: 30px; color: #262626; font-weight: 300;">About Me</h2>
+                    <p>I'm a passionate frontend developer who loves turning creative designs into beautiful, interactive web experiences. With expertise in modern JavaScript frameworks and a keen eye for user interface design, I create responsive applications that users love to interact with.</p>
+                    <br>
+                    <p>I specialize in React, Vue.js, and cutting-edge CSS techniques. When I'm not coding, you'll find me exploring the latest frontend trends, contributing to open-source UI libraries, or perfecting my designs on Figma.</p>
+                </div>
+            </div>
+
+            <div id="experience" class="tab-content">
+                <div class="grid">
+                    <div class="card">
+                        <h3>Senior Frontend Developer</h3>
+                        <p style="color: #667eea; font-weight: 600;">TechCorp Inc. • 2022 - Present</p>
+                        <p>Lead frontend architecture for enterprise SaaS applications. Built responsive React components used by 50k+ users daily. Improved page load times by 60% through performance optimization.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Frontend Developer</h3>
+                        <p style="color: #667eea; font-weight: 600;">StartupXYZ • 2020 - 2022</p>
+                        <p>Developed modern web applications using React, TypeScript, and Tailwind CSS. Collaborated with designers to implement pixel-perfect UIs and smooth animations using Framer Motion.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Junior Frontend Developer</h3>
+                        <p style="color: #667eea; font-weight: 600;">Digital Agency • 2019 - 2020</p>
+                        <p>Built responsive websites and landing pages using HTML, CSS, and vanilla JavaScript. Gained expertise in CSS Grid, Flexbox, and modern frontend build tools like Webpack.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="tab-content">
+                <div class="skills-grid">
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">TypeScript</div>
+                    <div class="skill">HTML5</div>
+                    <div class="skill">CSS3</div>
+                    <div class="skill">Tailwind CSS</div>
+                    <div class="skill">Sass/SCSS</div>
+                    <div class="skill">Webpack</div>
+                    <div class="skill">Vite</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">Figma</div>
+                </div>
+            </div>
+
+            <div id="projects" class="tab-content">
+                <div class="grid">
+                    <div class="card project">
+                        <div class="project-title">Interactive Dashboard</div>
+                        <div class="project-tech">React • TypeScript • Chart.js • Tailwind CSS</div>
+                        <p>Modern analytics dashboard with real-time data visualization, responsive design, and smooth animations. Features dark/light mode and customizable widgets.</p>
+                    </div>
+                    <div class="card project">
+                        <div class="project-title">E-Commerce Frontend</div>
+                        <div class="project-tech">Vue.js • Nuxt.js • Vuex • SCSS</div>
+                        <p>High-performance e-commerce frontend with product filtering, cart management, and seamless checkout flow. Optimized for mobile-first experience.</p>
+                    </div>
+                    <div class="card project">
+                        <div class="project-title">Design System Library</div>
+                        <div class="project-tech">React • Storybook • Styled Components</div>
+                        <p>Comprehensive component library with 50+ reusable components, documentation, and automated testing. Used across multiple product teams.</p>
+                    </div>
+                    <div class="card project">
+                        <div class="project-title">Portfolio Website</div>
+                        <div class="project-tech">Next.js • Framer Motion • Tailwind CSS</div>
+                        <p>Personal portfolio with smooth scroll animations, 3D elements, and dynamic content. Achieved 100% Lighthouse performance score.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Portfolio/script.js"></script>
+</body>
+</html>
