@@ -19,7 +19,7 @@ function showTab(tabName) {
 }
 
 function changeProfilePic() {
-    const initials = ['YN', 'AB', 'CD', 'EF', 'GH'];
+    const initials = ['YN', 'AB', 'CD', 'EF', 'GH', 'IJ'];
     const current = document.getElementById('profileInitials').textContent;
     const currentIndex = initials.indexOf(current);
     const nextIndex = (currentIndex + 1) % initials.length;
